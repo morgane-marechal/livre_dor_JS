@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+html{
+    font-family: 'Orbitron', monospace;
+
+}
+
+/* ------- CSS du header ------*/
+header{
+    display:flex;
+    flex-direction: row;
+    height:7%;
+    width: 100%;
+    background-color: #353232;
+    justify-content: space-around;
+    align-items: center;
+    position: static;
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+li{
+    height:100%;
+    list-style-type: none;
+    margin:0px 20px 0px 20px;
+}
+
+
+li a{
+    text-decoration: none;
+    color:rgb(32, 152, 189);
+    font-size: 1.8em;
+    font-family: 'Orbitron', monospace;
+
+
+}
+
+li p{
+    color:antiquewhite;
+}
+
+a:hover{
+    color: rgb(72, 255, 16);
+
+}
