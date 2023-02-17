@@ -6,16 +6,10 @@
 if(!empty($_POST)) {
 $login = htmlspecialchars($_POST['login']);
 $password = htmlspecialchars($_POST['password']);
-echo "<br> login = ".$login;
-echo "<br> password = ".$password;
 $test = new User($login,$password);
-$test->register();
+echo $test->register();
 }
-
 ?>
-
-
-
 
 
                     <form id="inscription_form" action="" method="post">

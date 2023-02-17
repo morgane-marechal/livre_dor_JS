@@ -6,8 +6,8 @@
 if(!empty($_POST)) {
 $login = htmlspecialchars($_POST['login']);
 $password = htmlspecialchars($_POST['password']);
-echo "<br> login = ".$login;
-echo "<br> password = ".$password;
+//echo "<br> login = ".$login;
+//echo "<br> password = ".$password;
 $test = new User($login,$password);
 $test->connect($login,$password);
 }

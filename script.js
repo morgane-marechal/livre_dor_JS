@@ -1,8 +1,11 @@
-//const connexion = document.getElementById("connexion-place");
 const place = document.getElementById("inscription-place");
+//const profilPlace = document.getElementById("profil-place");
+//profilPlace.innerHTML="hello";
 const connexionButton = document.getElementById("connexion-button");
 const inscriptionButton = document.getElementById("inscription-button");
 
+let isOk = document.getElementById("isOk");
+//document.getElementById("isOk").innerHTML="check isOk";
 
 
 inscriptionButton.addEventListener("click", () => {
@@ -21,8 +24,11 @@ inscriptionButton.addEventListener("click", () => {
                     body: new FormData(registerForm)
                 })
                     .then(response => {
-                        
-                        return response;
+                        //isOk.innerHTML="Bravo l'inscription a fonctionné";
+                        return response.text();
+                    })
+                    .then((content) => {
+                        place.innerHTML=content
                     })
             })
         })
@@ -44,8 +50,15 @@ connexionButton.addEventListener("click", () => {
                     body: new FormData(connexionForm)
                 })
                     .then(response => {
-                        return response;
+                        //isOk.innerHTML="La connexion fonctionne";
+                        //window.location.replace("profil.php");
+                        return response.text();
+                    })
+                    .then((content) => {
+                        place.innerHTML=content
+                        //window.location.replace("profil.php");
                     })
             })
         })
 }) 
+

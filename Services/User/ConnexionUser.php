@@ -19,15 +19,19 @@ class User{
         //echo var_dump($res);
         $count = intval($res['count']);
         if($count!=0){
-           echo "<br> Si ce message s'affiche c'est que vous vous êtes connecté avec succès<br>";
-            $_SESSION['login'] = $login;
-            echo "Voici vos identifiants de session: ".$login."<br>";
+           $_SESSION['login'] = $login;
+           $_SESSION['password'] = $password;
+
+           $allInfo = $bdd -> prepare("SELECT * FROM utilisateurs WHERE login = '$this->login'");
+            $allInfo -> execute();
+            $result = $allInfo->fetch(PDO::FETCH_ASSOC);
+            $resultId = $result ['id'];
+            $_SESSION['id'] = $resultId;
+            ?><script>window.location.replace("profil.php");</script><?php
         }else{
             echo "Problème d'identifiant ou de mot de passe";
         }
     }
-
-
 }
 
 ?>

@@ -1,4 +1,5 @@
 <?php session_start(); ?>
+
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" href="style.css" />
@@ -13,15 +14,14 @@
     ?>
 
 
-        <button id="inscription-button">Inscription</button>
-        <button id="connexion-button">Connexion</button>
-
+    <button id="inscription-button">Inscription</button>
+    <button id="connexion-button">Connexion</button>
 
     <div id="inscription-place">
     </div>
 
-    <div id="connexion-place">
-    </div>
+
+    <div id="isOk"></div>
 
     <script type="text/javascript" src="script.js"></script>
 </body>
