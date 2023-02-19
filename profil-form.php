@@ -13,13 +13,13 @@ $password = $_SESSION['password'];
 if((!empty($_POST)) && $_POST['newlogin']){
     $newlogin = htmlspecialchars($_POST['newlogin']);
     $update = new User($login,$password);
-    $update->setLogin($newlogin);
+   echo $update->setLogin($newlogin);
     }
 
     if((!empty($_POST)) && $_POST['newpassword']){
         $newpassword = htmlspecialchars($_POST['newpassword']);
         $updatePW = new User($login,$password);
-        $updatePW->setPassword($newpassword);
+        echo $updatePW->setPassword($newpassword);
         }
 ?>
 

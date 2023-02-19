@@ -3,7 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    background-color: #414055;
+    color: rgb(183, 211, 236);
     
+}
+
+main{
+    
+    color: rgb(151, 195, 235);
+
 }
 
 html{
@@ -17,10 +25,12 @@ header{
     flex-direction: row;
     height:7%;
     width: 100%;
-    background-color: #353232;
+    background-color: #262c38;
+
     justify-content: space-around;
     align-items: center;
     position: static;
+    margin-bottom:3%;
     
 }
 
@@ -28,12 +38,14 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #262c38;
 }
 
 li{
     height:100%;
     list-style-type: none;
     margin:0px 20px 0px 20px;
+    background-color: #262c38;
 }
 
 
@@ -42,6 +54,7 @@ li a{
     color:rgb(32, 152, 189);
     font-size: 1.8em;
     font-family: 'Orbitron', monospace;
+    background-color: #262c38;
 
 
 }
@@ -51,6 +64,118 @@ li p{
 }
 
 a:hover{
-    color: rgb(72, 255, 16);
+    color: rgb(180, 17, 255);
 
+}
+
+/* ------- CSS des formulaires ------*/
+
+#inscription_form, #connexion_form, #profil_form, #comment_form{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    padding: 2%;
+}
+
+#inscription_form input, #connexion_form input, #profil_form input{
+    margin:1%;
+    height:6vh;
+    width:75%;
+    font-size: 1.3em;
+    border-radius: 1px;
+    background-color: rgba(225, 148, 245, 0.8);
+    color: #262c38;
+}
+
+
+#inscription-place{
+    background-color: black;
+    border-radius: 1%;
+}
+
+#inscription-button, #connexion-button, #profil-button, #commentaire-button{
+    background-color: rgb(77, 82, 104);
+    border-radius: 10px;
+    margin:1%2%1%2%;
+    text-transform: uppercase;
+    font-weight: 600;
+    width:20%;
+    height:50px;
+
+}
+
+#inscription-button:hover, #connexion-button:hover, #profil-button:hover, #commentaire-button:hover{
+    
+    background-color: rgba(236, 201, 245, 0.5);
+    color: rgb(120, 79, 167);
+
+}
+
+#buttons{
+    margin:2%,0%,2%,2%;
+    padding:1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+/* ------- CSS page profil ------*/
+
+#welcome, #logout{
+    text-align: center;
+    font-size: 1.4em;
+}
+
+/* ------- CSS page livre-or ------*/
+#display-comment{
+    background-color: aliceblue;
+    color: #5e6064;
+
+}
+
+table{
+    width:100%;
+
+}
+
+thead tr td{
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.4em;
+    color:rgb(32, 152, 189);
+}
+
+tr{
+    margin-top:10px;
+    margin-bottom: 20px;
+    padding:5%;
+
+}
+
+td{
+    background-color: rgb(77, 82, 104, 0.5);
+    color: rgb(214, 193, 193);
+    text-align: center;
+    padding:2%5%2%5%;
+    font-size: 1.3em;
+}
+
+#dComments{
+    display: flex;
+    align-items: center;
+    width:100%;
+    padding:2%5%2%5%;
+}
+
+#comment{
+    background-color: rgba(236, 201, 245, 0.5);
+    color:white;
+    width:60%;
+    height:80px;
+    border: none;
+    font-size: 1.4em;
 }

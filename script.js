@@ -55,8 +55,9 @@ connexionButton.addEventListener("click", () => {
                         return response.text();
                     })
                     .then((content) => {
+                        window.location.replace("profil.php");
                         place.innerHTML=content
-                        //window.location.replace("profil.php");
+                        
                     })
             })
         })

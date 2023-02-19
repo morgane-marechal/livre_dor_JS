@@ -23,7 +23,10 @@ profilButton.addEventListener("click", () => {
 
                        // info.innerHTML="Mise à jour";
                         //window.location.replace("profil.php");
-                        return response;
+                        return response.text();
+                    })
+                    .then((content) => {
+                        profilPlace.innerHTML=content
                     })
             })
         })

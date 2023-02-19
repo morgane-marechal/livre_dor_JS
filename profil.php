@@ -11,13 +11,17 @@
 <body>    
     
 <?php require('header.php');?>
-
-<?php 
+<div id="welcome">
+    <?php 
     echo "Bonjour ".$_SESSION['login'].". Voulez-vous modifier vos informations de connexion ?<br>";
 ?>
+</div>
 
 
-<button id="profil-button">Modifier le profil</button>
+<div id="buttons">
+    <button id="profil-button">Modifier le profil</button>
+</div>
+
 
 <?php 
     $login=$_SESSION['login'];

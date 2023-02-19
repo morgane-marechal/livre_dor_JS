@@ -10,12 +10,20 @@
 
 <body>
     <?php require('header.php');?>
+    <div id="welcome">
+        <?php 
+        //echo "Session id : ".$_SESSION['id']."<br>";
+        if (isset($_SESSION['login'])&& !empty($_SESSION['login'])){
+        echo "Bonjour ".$_SESSION['login'].". Voulez-vous ajouter un commentaire ?<br>";
+        echo   "<div id='buttons'>
+        <button id='commentaire-button'>Laisser un commentaire</button>
+        </div>";
+        }else{
+            echo "Veuillez vous connecter pour laisser un commentaire.";
+        }
+        ?>
+    </div>
 
-    <?php 
-    //echo "Session id : ".$_SESSION['id']."<br>"; 
-    echo "Bonjour ".$_SESSION['login'].". Voulez-vous ajouter un commentaire ?<br>";
-    ?>
-    <button id="commentaire-button">Laisser un commentaire</button>
 
 
     <div id="commentaire-place"></div>
@@ -24,9 +32,12 @@
     <?php require('db_connect.php'); ?>
     <?php require('Services/Comment/ManageComment.php'); ?>
     <?php 
-            $idUser = $_SESSION['id'];        
+  
+            $idUser = $_SESSION['id'];       
             $date = "2023-02-09 00:00:00";
+    
     $test2 = new Comment("hello", $idUser, $date);
+
     echo $test2->displayComment();
     ?>
 

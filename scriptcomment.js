@@ -22,8 +22,13 @@ commentButton.addEventListener("click", () => {
                         console.log(response)
                        // info.innerHTML="Mise à jour";
                         //window.location.replace("profil.php");
-                        return response;
+                        return response.text();
                     })
+                    .then((content) => {
+                        commentPlace.innerHTML=content
+                        
+                    })
+
             })
         })
 }) 

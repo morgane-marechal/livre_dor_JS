@@ -16,7 +16,7 @@ class User{
         $sqlupdate->execute(array($this->login));
         $_SESSION['login'] = $newlogin;
 
-        echo "Vous avez mis à jour votre profil.<br>";
+        return "Vous avez mis à jour votre profil.<br>";
     }
 
     public function setPassword($newpassword){
@@ -28,7 +28,7 @@ class User{
         $sqlupdate->execute(array($this->password));
         $_SESSION['password'] = $newpassword;
 
-        echo "Vous avez mis à jour votre mot de passe.<br>";
+        return "Vous avez mis à jour votre mot de passe.<br>";
     }
 
 }

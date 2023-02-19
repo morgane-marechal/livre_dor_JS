@@ -12,16 +12,21 @@
     <?php
     require('header.php');
     ?>
+    <main>
 
-
-    <button id="inscription-button">Inscription</button>
-    <button id="connexion-button">Connexion</button>
-
-    <div id="inscription-place">
+        
+    <div id="buttons">
+        <button id="inscription-button">Inscription</button>
+        <button id="connexion-button">Connexion</button>        
     </div>
 
 
-    <div id="isOk"></div>
+        <div id="inscription-place">
+        </div>
+
+
+        <div id="isOk"></div>
+</main>
 
     <script type="text/javascript" src="script.js"></script>
 </body>

@@ -12,8 +12,8 @@
         $myhour=date("H:i:s");
         //valeur de la date pour le type sql datetime YYYY-MM-DD
         $date="$mydate[year]/$mydate[mon]/$mydate[mday] $myhour";
-        $_SESSION['login'] = $login;
-        $_SESSION['password'] = $password;
+        $login=$_SESSION['login'];
+        $password=$_SESSION['password'];
         $comment = htmlspecialchars($_POST['comment']);
         $testUser = new User($login,$password);
         $idUser = $_SESSION['id'];        

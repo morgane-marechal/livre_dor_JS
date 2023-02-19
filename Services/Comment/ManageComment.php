@@ -24,12 +24,12 @@ class Comment{
             $result = $allComment->fetchAll(PDO::FETCH_ASSOC);
             //echo var_dump($result);
             //tableau html -->
-            echo "<table>
-            <thead><tr><td>Comment</td></tr></thead><tbody>";
-            for ($i = 0; $i < count($result); $i++) {
+            echo "<div id='dComments'><table>
+            <thead><tr><td>Livre d'or</td></tr></thead><tbody>";
+            for ($i = (count($result)-1); $i >= 0; $i--) {
             echo "<tr><td>Le ".$result[$i]['date']."<br> ".$result[$i]['commentaires']."<br>".$result[$i]['login']."</td></tr>";
             }
-            echo "</tbody></table>";
+            echo "</tbody></table></div>";
         }
     
     }  
