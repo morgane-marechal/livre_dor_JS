@@ -29,6 +29,6 @@
         <h3>Laisser un commentaire</h3>
         <input class= "comment" type="text" name="comment" id="comment" placeholder="Ajouter un commentaire*" required minlength="20">
         </select>
-        <input class="submit" id="submit" type="submit" value="Envoyer">
+        <input class="submit" id="submit" onClick="window.location.reload()" type="submit" value="Envoyer">
         <i class="small">* Champs obligatoires avec 20 caractères minimum</i>
     </form>

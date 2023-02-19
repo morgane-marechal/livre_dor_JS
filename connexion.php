@@ -19,7 +19,7 @@ $test->connect($login,$password);
                         <input type="text" name="login" id="login" placeholder="Login*" required minlength="3">
                         <input type="password" name="password" id="password" placeholder="Password*" required minlength="3">
                         </select>
-                        <input class="submit" id="submit" type="submit" value="Envoyer">
+                        <input class="submit" id="submit" onClick="window.location.reload()" type="submit" value="Envoyer">
                         <i class="small">* Champs obligatoires avec 3 caractères minimum</i>       
                     </form>
                 

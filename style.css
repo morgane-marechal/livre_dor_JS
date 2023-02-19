@@ -88,6 +88,23 @@ a:hover{
     color: #262c38;
 }
 
+#inscription_form input:hover, #connexion_form input:hover, #profil_form input:hover{
+    background-color: rgba(209, 102, 236);
+}
+
+.submit{
+    margin:1%;
+    height:6vh;
+    width:60%;
+    font-size: 1.3em;
+    border-radius: 1px;
+    background-color: rgba(209, 102, 236, 0.8);
+    color: #262c38;
+}
+.submit:hover{
+    background-color: rgba(209, 102, 236);
+    
+}
 
 #inscription-place{
     background-color: black;

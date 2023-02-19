@@ -32,3 +32,7 @@ commentButton.addEventListener("click", () => {
             })
         })
 }) 
+commentButton.addEventListener("click", () =>{
+    window.location.replace("livre-or.php");
+
+});

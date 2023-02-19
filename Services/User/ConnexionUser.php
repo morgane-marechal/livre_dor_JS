@@ -27,7 +27,8 @@ class User{
             $result = $allInfo->fetch(PDO::FETCH_ASSOC);
             $resultId = $result ['id'];
             $_SESSION['id'] = $resultId;
-            ?><script>window.location.replace("profil.php");</script><?php
+            
+            
         }else{
             echo "Problème d'identifiant ou de mot de passe";
         }
