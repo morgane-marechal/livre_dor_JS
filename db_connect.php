@@ -2,8 +2,8 @@
 
 // --------------------connexion à PDO----------------------------
 
-$dsn = 'mysql:host=localhost;dbname=livre_or_js;charset=utf8';
-$user = 'root';
+$dsn = 'mysql:host="";dbname="";charset=utf8';
+$user = '';
 $password = '';
 
 
